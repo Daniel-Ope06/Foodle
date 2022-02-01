@@ -1,0 +1,4 @@
+Color Scheme of Website:
+English Red (Hex: A84B5C)
+Jet (Hex: 2E2F2F)
+Air Superiority Blue (Hex:)

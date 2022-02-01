@@ -1,0 +1,338 @@
+<!-- About -->
+<div class="container-fluid" id="aboutus">
+    <div class="row">
+        <!-- Left Col -->
+        <div class="col-sm-6 col-lg-6 colunm-left"></div>
+         <!-- Right Col -->
+        <div class="col-sm-6 col-lg-6 colunm-right">
+            <h1 class="section-title">About Us</h1>
+            <p class="paragraph">{% include '/text/about_us.txt' %}</p>
+        </div>
+    </div>
+</div>
+
+<!-- Services -->
+<div class="container-fluid" id="ourservices">
+    <div class="row">
+        <!-- Left Col -->
+        <div class="col-xs-12 col-sm-6 col-lg-6">
+            <h1 class="section-title">What we do</h1>
+            <p class="paragraph">{% include '/text/services.txt' %}</p>
+            <div class="row">
+                <!-- Step 1 -->
+                <div class="col-xs-12 col-sm-6 col-lg-6 step-1">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h1 class="step-title-1">Place Order</h1>
+                    <p class="step-paragraph-1">{% include '/text/step-1.txt' %}</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="col-xs-12 col-sm-6 col-lg-6 step-2">
+                    <i class="fas fa-truck"></i>
+                    <h1 class="step-title-2">Pick up</h1>
+                    <p class="step-paragraph-2">{% include '/text/step-2.txt' %}</p>
+                </div>
+            </div>
+        </div>
+        <!-- Right Col -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 our-service-right"></div>
+    </div>
+</div>
+
+
+<!-- Contact us -->
+<div class="container-fluid" id="contact">
+    <div class="row">
+        <!-- Left Col -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 contact-left">
+
+        </div>
+        <!-- Right Col -->
+        <div class="col-xs-12 col-sm-6 col-lg-6 contact-right">
+            <div class="text-right-block">
+                <div class="right-center-text">
+                    <div class="right-center-part">
+                        <h2 class="section-title">Get in touch</h2>
+                        <p class="paragraph">
+                            {% include '/text/contact.txt' %}<br><br>
+                            Contact us via<br>
+                            <strong>Phone :</strong>
+                            <a href="#" class="phone-mail-link">00000000000</a><br>
+                            <strong>Email :</strong>
+                            <a href="#" class="phone-mail-link">dan@xyz.com</a>
+                        </p>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-10">
+                                <form id="contact-form" name="contact-form" method="POST" data-name="Contact-form">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" id="name" class="form form-control" placeholder="Name*" name="name" data-name="Name" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" id="email" class="form form-control" placeholder="Email adress*" name="email" data-name="Email Adress" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" id="company" class="form form-control" placeholder="Company name" name="company" data-name="Company">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="tel" id="phone" class="form form-control" placeholder="Phone number*" name="phone" data-name="Phone" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-lg-12">
+                                            <div class="form-group">
+                                                <textarea id="text-area" class="form textarea form-control" placeholder="Your message here*" name="message" data-name="Text Area" required></textarea>
+                                            </div>
+                                            <span class="sub-text">* Required fields</span>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" id="valid-form" class="btn btn-color">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                        <p class="copyright">Tenderly made by Foodle technical team <i class="fab fa-gratipay" style="font-size: 12px; color: #A84B5D;"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<style>
+.section-title{
+    margin-top: 50px;
+    text-align: left;
+    color: #A84B5C;
+    padding: 1rem 5rem 1rem 5rem;
+}
+
+.paragraph{
+    margin-top: 15px;
+    text-align: justify;
+    padding: 1rem 5rem 1rem 5rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+/* Step Titles */
+.step-title-1{
+    padding: 1rem 2rem 1rem 5rem;
+    font-size: 1.8rem;
+}
+.step-title-2{
+    padding: 1rem 5rem 1rem 1rem;
+    font-size: 1.8rem;
+}
+
+/* Step Pragraphs */
+.step-paragraph-1{
+    margin-top: 15px;
+    padding: 0rem 1rem 1rem 5rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+.step-paragraph-2{
+    margin-top: 15px;
+    padding: 0rem 5rem 1rem 1rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* Step Icons */
+.fas{
+    font-size: 4rem;
+    color: #A84B5C;
+}
+.step-1 .fas{
+    padding: 3rem 2rem 1rem 5rem;
+}
+.step-2 .fas{
+    padding: 3rem 5rem 1rem 1rem;
+}
+
+/* Contact Section */
+.contact-section{
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+strong{font-weight: 700;}
+.phone-mail-link{color: #A84B5C; font-weight: bold;}
+.phone-mail-link:hover{color: #759FBC; font-weight: bold;}
+
+#contact-form{
+    margin-top: 5px;
+}
+#contact-form .form-control{
+    background: #2E2F2F;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: none;
+    font-weight: 300;
+    outline: medium none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    height: auto;
+    width: 100%;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    transition: all 0.2s ease-in-out;
+    text-align: left;
+}
+#contact-form textarea.form-control{
+    min-height: 8rem;
+}
+#contact-form span.sub-text{
+    position: absolute;
+    font-size: 0.9rem;
+    right: 4rem;
+}
+#contact-form button#valid-form{
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    right: 3.5rem;
+}
+
+.copyright{
+    position: absolute;
+    right: 24rem;
+    bottom: -152rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 5;
+}
+
+
+/* About Us Image */
+.colunm-left{
+    background-color: var(--mixer);
+    background-image:   linear-gradient(315deg, var(--primary) 0%, var(--secondary) 74%), 
+    url("https://www.linkpicture.com/q/image-4_15.jpg");
+    background-size: cover;
+    background-position: 0px 0px, 100% 50%;
+    background-attachment: scroll, scroll;
+    min-height: 750px;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+
+/* Services Image */
+.our-service-right{
+    background-color: var(--mixer);
+    background-image:   linear-gradient(315deg, var(--primary) 0%, var(--secondary) 74%), 
+    url("https://www.linkpicture.com/q/image-1_27.jpg");
+    background-position: 0px 0px, 100% 50%;
+    background-size: cover;
+    background-position: 0px 0px, 100% 50%;
+    background-attachment: scroll, scroll;
+    min-height: 750px;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+/* Contact Image */
+.contact-left{
+    background-color: var(--mixer);
+    background-image:   linear-gradient(315deg, var(--primary) 0%, var(--secondary) 74%), 
+    url("https://images.pexels.com/photos/1716539/pexels-photo-1716539.jpeg?cs=srgb&dl=pexels-rafael-barros-1716539.jpg&fm=jpg");
+    background-size: cover;
+    background-attachment: scroll, scroll;
+    min-height: 800px;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+
+@media (max-width: 768px){
+    .section-title{
+        margin-top: 25px;
+        padding: 1rem 1rem 1rem 1rem;
+        text-align: center;
+    }
+    .paragraph{
+        margin-top: 7.5px;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+
+    .step-title-1{
+        padding: 0rem 0rem 0rem 1rem;
+    }
+    .step-title-2{
+        padding: 0rem 0rem 0rem 1rem;
+    }
+    .step-paragraph-1{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    .step-paragraph-2{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    .step-1 .fas{
+        padding: 2rem 0rem 1rem 1rem;
+    }
+    .step-2 .fas{
+        padding: 2rem 0rem 1rem 1rem;
+    }
+
+    #contact-form .form-control{
+        margin-left: 0rem;
+    }
+    #contact-form span.sub-text{
+        position: absolute;
+        right: 1rem;
+    }
+    #contact-form button#valid-form{
+        font-size: 0.7rem;
+        position: absolute;
+        right: 1rem;
+    }
+    .copyright{
+        position: absolute;
+        right: 10rem;
+        bottom: -225rem;
+    }
+
+
+    /* Images */
+    .colunm-left{
+        min-height: 350px;
+    }
+    .our-service-right{
+        min-height: 350px;
+    }
+    .contact-left{
+        min-height: 350px;
+    }
+}
+
+
+
+</style>

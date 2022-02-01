@@ -1,0 +1,104 @@
+<div class="header">
+  <div class="menu-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{{ url_for('home_page') }}">Foodle</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-auto ms-auto">
+            <a class="nav-link active" href="{{ url_for('home_page') }}">Home</a>
+            <a class="nav-link" href="#">Order</a>
+            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="{{ url_for('home_page') }}#aboutus">About</a>
+            <a class="nav-link" href="{{ url_for('home_page') }}#ourservices">Services</a>
+            <a class="nav-link" href="{{ url_for('team_page') }}">Team</a>
+            <a class="nav-link" href="{{ url_for('home_page') }}#contact">Contact</a>
+          </div>
+
+          <form class="d-flex">
+            <i class="fas fa-envelope-open-text" id="news-letter"></i>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+
+<style>
+.menu-bar{
+  background: #A84B5D;
+  background: -webkit-linear-gradient(top left, #A84B5D, #F6EFA6);
+  background: -moz-linear-gradient(top left, #A84B5D, #F6EFA6);
+  background: linear-gradient(to bottom right, #A84B5D, #F6EFA6);
+}
+
+/* Navigation Buttons |Hover | Active*/
+.nav-link{
+  font-weight: normal;
+  font-size: 20px;
+  color: #2E2F2F !important;
+}
+
+.navbar-nav{
+  text-align: center;
+}
+
+.nav-link:hover{
+  font-weight: bolder;
+  border-bottom: 3px solid #2E2F2F;
+}
+
+.nav-link.active{
+  font-weight: bolder;
+}
+
+#news-letter{
+  font-size: 45px;
+  color: #A84B5D
+}
+#news-letter:hover{
+    color: #759FBC;
+    text-decoration: none;
+}
+
+
+/* Toggle button */
+.navbar-toggler{
+  padding-right: 15px;
+  outline: none !important;
+  border: none !important;
+}
+
+/* Logo Text */
+.navbar-brand{
+  padding: 1rem 0;
+  display: block;
+  text-decoration: none;
+}
+
+.navbar-brand{
+    font-family: "Lucida Handwriting";
+    font-size: 2.2rem;
+}
+
+.navbar .navbar-brand img {
+  height: 50px;
+}
+
+
+/* Settings for phone and Tablet */
+@media only screen and (max-width: 1000px){
+  .nav-link:hover{
+    border-bottom: none !important;
+  }
+}
+
+
+
+</style>
+
