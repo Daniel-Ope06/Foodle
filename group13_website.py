@@ -12,6 +12,18 @@ app = Flask(__name__)
 def home_page():
     return render_template("home_page.html")
 
+# Team page
 @app.route("/team")
 def team_page():
     return render_template("team_page.html")
+
+# Menu page
+@app.route("/menu")
+def menu_page():
+    return render_template("menu_page.html")
+
+# Checkout page
+@app.route("/checkout")
+def checkout_page():
+    return render_template("checkout.html")
+

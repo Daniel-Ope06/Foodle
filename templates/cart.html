@@ -1,0 +1,43 @@
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+
+                <div class="modal-footer">
+                    <a href="{{ url_for('checkout_page') }}" id="continue-checkout" class="btn btn-color">Continue to checkout</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+.modal-header{
+    background: #A84B5D;
+    background: -webkit-linear-gradient(top left, #A84B5D, #F6EFA6);
+    background: -moz-linear-gradient(top left, #A84B5D, #F6EFA6);
+    background: linear-gradient(to bottom right, #A84B5D, #F6EFA6);
+    color: #2E2F2F;
+}
+
+#continue-checkout{
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 15rem;
+    border-radius: 5rem;
+    position: relative;
+    margin-top: 2rem;
+    border: none;
+    display: inline-block;
+}
+
+</style>

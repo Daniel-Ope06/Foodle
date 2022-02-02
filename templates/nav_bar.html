@@ -9,19 +9,19 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav me-auto ms-auto">
             <a class="nav-link active" href="{{ url_for('home_page') }}">Home</a>
-            <a class="nav-link" href="#">Order</a>
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="{{ url_for('menu_page') }}">Menu</a>
             <a class="nav-link" href="{{ url_for('home_page') }}#aboutus">About</a>
             <a class="nav-link" href="{{ url_for('home_page') }}#ourservices">Services</a>
             <a class="nav-link" href="{{ url_for('team_page') }}">Team</a>
             <a class="nav-link" href="{{ url_for('home_page') }}#contact">Contact</a>
           </div>
-
-          <form class="d-flex">
-            <i class="fas fa-envelope-open-text" id="news-letter"></i>
-          </form>
-
         </div>
+
+        <form class="d-flex">
+          <i class="fas fa-shopping-cart" id="cart" data-bs-toggle="modal" data-bs-target="#myModal"></i>
+        </form>
+        {% include 'cart.html' %}
+
       </div>
     </nav>
   </div>
@@ -57,11 +57,12 @@
   font-weight: bolder;
 }
 
-#news-letter{
+#cart{
   font-size: 45px;
-  color: #A84B5D
+  color: #A84B5D;
+  padding-right: 2rem;
 }
-#news-letter:hover{
+#cart:hover{
     color: #759FBC;
     text-decoration: none;
 }
@@ -97,8 +98,5 @@
     border-bottom: none !important;
   }
 }
-
-
-
 </style>
 

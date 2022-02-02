@@ -1,0 +1,113 @@
+<!-- Checkout Page -->
+{% extends 'base_template.html' %}
+{% block title %}
+    Checkout
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>Checkout form</h2>
+        <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab</p>
+    </div>
+</div>
+
+<div class="container">
+    <form novalidate id="checkout-form">
+        <!-- Name and Email-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input id="firstName" type="text" class="form-control" placeholder="John" required>
+                <div class="invalid-feedback">Valid first name is required</div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input id="lastName" type="text" class="form-control" placeholder="Smith" required>
+                <div class="invalid-feedback">Valid last name is required</div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-lg-12 my-4">
+            <label for="email" class="form-label">Email Adress (Optional)</label>
+            <input type="email" id="email" class="form form-control" placeholder="johnsmith@xyz.com" name="email" data-name="Email Adress">
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Paymeny method -->
+        <h4 class="mb-3 my-3">Payments</h4>
+        <div class="form-check">
+            <input id="deditCard" type="radio" class="form-check-input" name="paymentMethod" checked required>
+            <label for="deditCard">Debit Card</label>
+        </div>
+        <div class="form-check">
+            <input id="cash" type="radio" class="form-check-input" name="paymentMethod" required>
+            <label for="cash">Cash</label>
+        </div>
+
+        <!-- Card iniformation -->
+        <div class="row my-4">
+            <div class="col-xs-12 col-sm-6 col-lg-6">
+                <label for="fullName" class="form-label">Name on card</label>
+                <input id="fullName" type="text" class="form-control">
+                <div class="invalid-feedback">Name on card is required</div>
+                <small class="text-muted">Full name as displayed on card</small>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-6">
+                <label for="cc-number" class="form-label">Debit card number</label>
+                <input id="cc-number" type="text" class="form-control">
+                <div class="invalid-feedback">Debit card number is required</div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+                <label for="cc-expire" class="form-label">Expiration</label>
+                <input id="cc-expire" type="text" class="form-control">
+                <div class="invalid-feedback">Expiration is required</div>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-lg-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input id="cc-cvv" type="text" class="form-control">
+                <div class="invalid-feedback">CVV is required</div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+        <button type="submit" id="valid-form" class="btn btn-lg btn-color">Finish order</button>
+
+    </form>
+</div>
+
+<style>
+.btn{
+    margin-bottom: 5rem;
+    border-radius: 5rem;
+}
+
+#checkout-form .form-control{
+    background: #2E2F2F;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: none;
+    font-weight: 300;
+    outline: medium none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    height: auto;
+    width: 100%;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+
+@media (max-width: 768px){
+    .btn{
+        margin-bottom: 0rem;
+    }
+
+}
+</style>
+
+{% endblock %}

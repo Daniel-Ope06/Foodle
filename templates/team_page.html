@@ -152,7 +152,7 @@
   </div>
 
   <!-- Row 3 -->
-  <div class="row g-3 mt-3 mb-3">
+  <div class="row g-3 mt-3 last-rf">
     <!-- Team Memeber 9 -->
     <div class="col-12 col-md-6 col-lg-3">
       <div class="card">
@@ -181,7 +181,7 @@
           <div class="social-media">
             <i class="fab fa-facebook-square"></i>
             <i class="fab fa-linkedin"></i>
-            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-github-square"></i>
           </div>
         </div>
       </div>
@@ -210,11 +210,26 @@
   color: #A84B5C;
   padding: 0 5px;
 }
+.social-media .fab:hover{
+  color: #759FBC;
+
+}
 
 .card{
   box-shadow: 0px 2px 5px #A84B5C;
   overflow: hidden;
   border-radius: 15px;
+}
+
+.last-rf{
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px){
+  .last-rf{
+    margin-top: 1rem;
+    margin-bottom: -5rem;
+  }
 }
 </style>
 {% endblock %}
