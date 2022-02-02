@@ -2,19 +2,77 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Cart</h5>
+                <h5 class="modal-title" style="font-size: 2rem; font-weight: 300;">CART</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
             <div class="modal-body">
+                <!-- Horizontal cards -->
+                <!-- Order 1 -->
+                <div class="card">
+                    <div class="row">
+                        <div class="col-2 col-lg-4 cart">
+                            <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Meal 1" class="image-fluid">
+                        </div>
+                        <div class="col-6 col-lg-8 cart-txt">
+                            <div class="row">
+                                <div class="col-10">
+                                    <h2 class="card-title mt-3">Meal 1</h2>
+                                    <h6 class="price">Price</h6>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <h6 class="price">2</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order 2 -->
+                <div class="card mt-3">
+                    <div class="row">
+                        <div class="col-2 col-lg-4 cart">
+                            <img src="https://images.pexels.com/photos/1265626/pexels-photo-1265626.jpeg?cs=srgb&dl=pexels-fox-1265626.jpg&fm=jpg" alt="Meal 6" class="image-fluid">
+                        </div>
+                        <div class="col-6 col-lg-8 cart-txt">
+                            <div class="row">
+                                <div class="col-10">
+                                    <h2 class="card-title mt-3">Meal 2</h2>
+                                    <h6 class="price">Price</h6>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <h6 class="price">1</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
+                <!-- Order 3 -->
+                <div class="card mt-3">
+                    <div class="row">
+                        <div class="col-2 col-lg-4 cart">
+                            <img src="https://images.pexels.com/photos/551997/pexels-photo-551997.jpeg?cs=srgb&dl=pexels-foodie-factor-551997.jpg&fm=jpg" alt="Meal 9" class="image-fluid">
+                        </div>
+                        <div class="col-6 col-lg-8 cart-txt">
+                            <div class="row">
+                                <div class="col-10">
+                                    <h2 class="card-title mt-3">Meal 3</h2>
+                                    <h6 class="price">Price</h6>
+                                </div>
+                                <div class="col-2 mt-3">
+                                    <h6 class="price">3</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="modal-footer">
                     <a href="{{ url_for('checkout_page') }}" id="continue-checkout" class="btn btn-color">Continue to checkout</a>
                 </div>
-
             </div>
-
         </div>
     </div>
 </div>
@@ -38,6 +96,43 @@
     margin-top: 2rem;
     border: none;
     display: inline-block;
+}
+
+.card{
+  box-shadow: 0px 2px 5px #A84B5C;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.price{
+   color: #A84B5C;
+   font-weight: 600;
+   font-style: italic;
+   font-size: 20px;
+}
+
+.cart .image-fluid{
+    height: 5.5rem;
+}
+
+.card-title{
+    font-size: 23px;
+    color: #2E2F2F;
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    .cart-txt{
+        position: relative;
+        left: 5rem;
+    }
+    .cart-txt .h2{
+        font-size: 1rem;
+    }
+    .cart-text .h6{
+        font-size: 0.5rem;
+    }
+
 }
 
 </style>
