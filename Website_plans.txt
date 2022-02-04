@@ -2,3 +2,90 @@ Color Scheme of Website:
 English Red (Hex: A84B5C)
 Jet (Hex: 2E2F2F)
 Air Superiority Blue (Hex:)
+
+
+Unused code
+/* for tablets portrait */
+@media (max-width: 2010px){
+    /* Images */
+    .colunm-left{
+        min-height: 500px;
+    }
+    .our-service-right{
+        min-height: 500px;
+    }
+    .contact-left{
+        min-height: 500px;
+    }
+}
+
+
+/* for tablets sideways */
+@media (max-height: 2000px){
+    .section-title{
+        text-align: center;
+        width: 200%;
+
+    }
+    .paragraph{
+        width: 200%;
+    }
+
+    .step-title-1{
+        padding: 0rem 0rem 0rem 5rem;
+        width: 200%;
+    }
+    .step-title-2{
+        padding: 0rem 0rem 0rem 20rem;
+        width: 282%;
+    }
+    .step-paragraph-1{
+        padding: 0rem 1rem 1rem 5rem;
+        width: 200%;
+    }
+    .step-paragraph-2{
+        padding: 0rem 1rem 1rem 20rem;
+        width: 282%;
+    }
+    .step-1 .fas{
+        padding: 2rem 0rem 1rem 5rem;
+    }
+    .step-2 .fas{
+        padding: 2rem 0rem 1rem 20rem;
+    }
+
+    #contact-form .form-control{
+        width: 100%;
+    }
+    #contact-form span.sub-text{
+        position: absolute;
+        right: 1rem;
+    }
+    #contact-form button#valid-form{
+        font-size: 0.7rem;
+        position: absolute;
+        right: 1rem;
+    }
+    .copyright{
+        position: relative;
+        right: 0rem;
+        bottom: -7rem;
+        margin-bottom: -2rem;
+    }
+
+
+    /* Images */
+    .colunm-left{
+        min-height: 650px;
+        width: 100%;
+    }
+    .our-service-right{
+        min-height: 650px;
+        width: 100%;
+    }
+    .contact-left{
+        min-height: 650px;
+        width: 100%;
+    }
+}
+
