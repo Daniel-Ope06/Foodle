@@ -1,0 +1,126 @@
+<div class="modal" id="myModal-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" style="font-size: 2rem; font-weight: 300;">Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <!-- horizontal orders -->
+                <!-- order 1 -->
+                <div class="row mb-4 d-flex justify-content-between align-items-center">
+                    <div class="col-md-2 col-lg-2 col-xl-2">
+                      <!-- image 1 -->
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
+                        class="img-fluid rounded-3" alt="Cotton T-shirt">
+                    </div>
+
+                    <div class="col-md-3 col-lg-3 col-xl-3">
+                      <h6 class="text-muted">Shirt</h6>
+                      <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                    </div>
+                    <!-- minus button -->
+                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus-square"></i>
+                        </button>
+                    </div>
+
+                    <!-- number of items -->
+                    <input id="form1" min="0" name="quantity" value="1" type="number"
+                    class="form-control form-control-sm" />
+
+                  <!-- plus button -->
+                  <button class="btn btn-link px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                    <i class="fas fa-plus-square"></i>
+                  </button>
+                </div>
+
+                <!-- price -->
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h6 class="mb-0">€ 44.00</h6>
+                </div>
+
+                <!-- delete btn -->
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                </div>
+            </div>
+
+                
+                <div class="modal-footer">
+                    <a href="{{ url_for('checkout_page') }}" id="continue-checkout" class="btn btn-color">Continue to checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.modal-header{
+    background: #A84B5D;
+    background: -webkit-linear-gradient(top left, #A84B5D, #F6EFA6);
+    background: -moz-linear-gradient(top left, #A84B5D, #F6EFA6);
+    background: linear-gradient(to bottom right, #A84B5D, #F6EFA6);
+    color: #2E2F2F;
+    text-transform: uppercase;
+}
+
+.fas{
+    font-size: 5px;
+}
+
+#continue-checkout{
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 15rem;
+    border-radius: 5rem;
+    position: relative;
+    margin-top: 2rem;
+    border: none;
+    display: inline-block;
+}
+
+.card{
+  box-shadow: 0px 2px 5px #A84B5C;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.price{
+   color: #A84B5C;
+   font-weight: 600;
+   font-style: italic;
+   font-size: 20px;
+}
+
+.cart .image-fluid{
+    height: 5.5rem;
+}
+
+.card-title{
+    font-size: 23px;
+    color: #2E2F2F;
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+    .cart-txt{
+        position: relative;
+        left: 5rem;
+    }
+    .cart-txt .h2{
+        font-size: 1rem;
+    }
+    .cart-text .h6{
+        font-size: 0.5rem;
+    }
+
+}
+
+</style>

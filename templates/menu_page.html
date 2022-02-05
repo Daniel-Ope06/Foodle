@@ -7,158 +7,273 @@
 
 {% block content %}
 <div class="conntainer-fluid mt-2">
-    <!-- Row 1 -->
+    <!--Canvas toggle -->
+    <div class="row g-3 mb-1">
+      <div class="col-4 col-md-4 col-lg-4 bars">
+        <i class="fas fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"></i>
+      </div>
+
+      <!-- Breakfaast Header -->
+      <div class="col-8 col-md-8 col-lg-8">
+        <h1 class="menu-section1" id="breakfast">Breakfast</h1>
+      </div>
+    </div>
+
+    <!-- Section content-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Sections</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <h3>Breakfast</h3>
+        <h3>Lunch</h3>
+      </div>
+    </div>
+
+    <!-- Breakfast meals -->
+    <!-- Breakfast 1 -->
     <div class="row g-3">
       <!-- Meal 1 -->
       <div class="col-12 col-md-6 col-lg-3">
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Meal 1" class="card-img-top">
+          <img src="https://images.pexels.com/photos/3858049/pexels-photo-3858049.jpeg?cs=srgb&dl=pexels-ummy-ummy-3858049.jpg&fm=jpg" alt="Breakfast 1" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Meal 1</h5>
-            <h6 class="price">Price</h6>
+            <h5 class="card-title">Toast bread & Tea</h5>
+            <h6 class="price">₦200</h6>
             <p class="card-text">{% include '/text/meal_1.txt' %}</p>
             <a href="#" class="btn btn-color btn-lg">Add to cart</a>
           </div>
         </div>
       </div>
   
-      <!-- Meal 2 -->
+      <!-- Breakfast 2 -->
       <div class="col-12 col-md-6 col-lg-3">
         <div class="card">
-          <img src="https://images.pexels.com/photos/2067423/pexels-photo-2067423.jpeg?cs=srgb&dl=pexels-marta-dzedyshko-2067423.jpg&fm=jpg" alt="Meal 2" class="card-img-top">
+          <img src="https://www.linkpicture.com/q/image-5_12.jpg" alt="Breakfast 2" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Meal 2</h5>
-            <h6 class="price">Price</h6>
+            <h5 class="card-title">Akara balls</h5>
+            <h6 class="price">3 for ₦50</h6>
             <p class="card-text">{% include '/text/meal_1.txt' %}</p>
             <a href="#" class="btn btn-color btn-lg">Add to cart</a>
           </div>
         </div>
       </div>
   
-      <!-- Meal 3 -->
+      <!-- Breakfast 3 -->
       <div class="col-12 col-md-6 col-lg-3">
         <div class="card">
-          <img src="https://images.pexels.com/photos/688804/pexels-photo-688804.jpeg?cs=srgb&dl=pexels-valeria-boltneva-688804.jpg&fm=jpg" alt="Meal 3" class="card-img-top">
+          <img src="https://www.linkpicture.com/q/image-6_11.jpg" alt="Breakfast 3" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Meal 3</h5>
-            <h6 class="price">Price</h6>
+            <h5 class="card-title">Custard</h5>
+            <h6 class="price">₦300</h6>
             <p class="card-text">{% include '/text/meal_1.txt' %}</p>
             <a href="#" class="btn btn-color btn-lg">Add to cart</a>
           </div>
         </div>
       </div>
   
-      <!-- Meal 4 -->
+      <!-- Breakfast 4 -->
       <div class="col-12 col-md-6 col-lg-3">
         <div class="card">
-          <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?cs=srgb&dl=pexels-foodie-factor-566566.jpg&fm=jpg" alt="Meal 4" class="card-img-top">
+          <img src="https://www.linkpicture.com/q/image-7_14.jpg" alt="Breakfast 4" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Meal 4</h5>
-            <h6 class="price">Price</h6>
+            <h5 class="card-title">Pap</h5>
+            <h6 class="price">₦150</h6>
             <p class="card-text">{% include '/text/meal_1.txt' %}</p>
             <a href="#" class="btn btn-color btn-lg">Add to cart</a>
           </div>
         </div>
       </div>
     </div>
-  
+
+
     <!-- Row 2 -->
     <div class="row g-3 mt-3">
-      <!-- Meal 5 -->
+      <!-- Breakfast 5 -->
       <div class="col-12 col-md-6 col-lg-3">
         <div class="card">
-          <img src="https://images.pexels.com/photos/103124/pexels-photo-103124.jpeg?cs=srgb&dl=pexels-julian-jagtenberg-103124.jpg&fm=jpg" alt="Meal 5" class="card-img-top">
+          <img src="https://www.linkpicture.com/q/image-8_11.jpg" alt="Breakfast 5" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Meal 5</h5>
-            <h6 class="price">Price</h6>
+            <h5 class="card-title">Pancake with syrup</h5>
+            <h6 class="price">₦300</h6>
             <p class="card-text">{% include '/text/meal_1.txt' %}</p>
             <a href="#" class="btn btn-color btn-lg">Add to cart</a>
           </div>
         </div>
       </div>
   
-      <!-- Meal 6 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card">
-          <img src="https://images.pexels.com/photos/1265626/pexels-photo-1265626.jpeg?cs=srgb&dl=pexels-fox-1265626.jpg&fm=jpg" alt="Meal 6" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Meal 6</h5>
-            <h6 class="price">Price</h6>
-            <p class="card-text">{% include '/text/meal_1.txt' %}</p>
-            <a href="#" class="btn btn-color btn-lg">Add to cart</a>
-          </div>
+
+    <!-- Brunch -->
+    <!-- Brunch Header -->
+    <div class="row g-3">
+        <div class="container">
+          <div class="section-divider" id="menu-section"><span>Brunch</span></div>
         </div>
-      </div>
-  
-      <!-- Meal 7 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card">
-          <img src="https://images.pexels.com/photos/2741458/pexels-photo-2741458.jpeg?cs=srgb&dl=pexels-kei-photo-2741458.jpg&fm=jpg" alt="Meal 7" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Meal 7</h5>
-            <h6 class="price">Price</h6>
-            <p class="card-text">{% include '/text/meal_1.txt' %}</p>
-            <a href="#" class="btn btn-color btn-lg">Add to cart</a>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Meal 8 -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card">
-          <img src="https://images.pexels.com/photos/139746/pexels-photo-139746.jpeg?cs=srgb&dl=pexels-angele-j-139746.jpg&fm=jpg" alt="Meal 8" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Meal 8</h5>
-            <h6 class="price">Price</h6>
-            <p class="card-text">{% include '/text/meal_1.txt' %}</p>
-            <a href="#" class="btn btn-color btn-lg">Add to cart</a>
-          </div>
-        </div>
-      </div>
     </div>
   
-    <!-- Row 3 -->
+    <!-- Row 1 -->
     <div class="row g-3 mt-3 mb-3">
-      <!-- Meal 9 -->
+      <!-- Brunch 1 -->
       <div class="col-12 col-md-6 col-lg-3">
         <div class="card">
-          <img src="https://images.pexels.com/photos/551997/pexels-photo-551997.jpeg?cs=srgb&dl=pexels-foodie-factor-551997.jpg&fm=jpg" alt="Meal 9" class="card-img-top">
+          <img src="https://images.unsplash.com/photo-1589227365533-cee630bd59bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Brunch 1" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Meal 9</h5>
-            <h6 class="price">Price</h6>
+            <h5 class="card-title">Noodles</h5>
+            <h6 class="price">₦250</h6>
             <p class="card-text">{% include '/text/meal_1.txt' %}</p>
             <a href="#" class="btn btn-color btn-lg">Add to cart</a>
           </div>
         </div>
       </div>
   
-      <!-- Meal 10 -->
+       <!-- Brunch 2 -->
       <div class="col-12 col-md-6 col-lg-3">
         <div class="card">
-          <img src="https://images.pexels.com/photos/262897/pexels-photo-262897.jpeg?cs=srgb&dl=pexels-pixabay-262897.jpg&fm=jpg" alt="Meal 10" class="card-img-top">
+          <img src="https://images.unsplash.com/photo-1566784015556-ef5dd7f9497f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Brunch 2" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Meal 10</h5>
-            <h6 class="price">Price</h6>
+            <h5 class="card-title">Waffles</h5>
+            <h6 class="price">₦300</h6>
             <p class="card-text">{% include '/text/meal_1.txt' %}</p>
             <a href="#" class="btn btn-color btn-lg">Add to cart</a>
           </div>
         </div>
       </div>
 
-      <!-- Meal 11 -->
+       <!-- Brunch 3 -->
       <div class="col-12 col-md-6 col-lg-3">
         <div class="card">
-          <img src="https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?cs=srgb&dl=pexels-lisa-fotios-1351238.jpg&fm=jpg" alt="Meal 11" class="card-img-top">
+          <img src="https://images.pexels.com/photos/890577/pexels-photo-890577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Brunch 3" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Meal 11</h5>
-            <h6 class="price">Price</h6>
+            <h5 class="card-title">Cookies</h5>
+            <h6 class="price">₦150 per unit</h6>
             <p class="card-text">{% include '/text/meal_1.txt' %}</p>
             <a href="#" class="btn btn-color btn-lg">Add to cart</a>
           </div>
         </div>
       </div>
-
     </div>
+
+    <!-- Lunch -->
+    <!-- Lunch Header -->
+    <div class="row g-3">
+      <div class="container">
+        <div class="section-divider" id="menu-section"><span>Lunch</span></div>
+      </div>
+  </div>
+
+  <!-- Row 1 -->
+  <div class="row g-3 mt-3 mb-3">
+    <!-- Lunch 1 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://www.linkpicture.com/q/image-13_6.jpg" alt="Lunch 1" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Amala</h5>
+          <h6 class="price">₦150</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Lunch 2 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://www.linkpicture.com/q/image-11_8.jpg" alt="Lunch 2" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Eba</h5>
+          <h6 class="price">₦150</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Lunch 3 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://www.linkpicture.com/q/image-12_7.jpg" alt="Lunch 3" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Pounded yam</h5>
+          <h6 class="price">₦150</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lunch 4 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://www.linkpicture.com/q/image-14_5.jpg" alt="Lunch 4" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Oha soup</h5>
+          <h6 class="price">₦500</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Row 2 -->
+  <div class="row g-3 mt-3 mb-3">
+    <!-- Lunch 5 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://www.linkpicture.com/q/image-13_6.jpg" alt="Lunch 5" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Egusi soup</h5>
+          <h6 class="price">₦500</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Lunch 6 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://www.linkpicture.com/q/image-11_8.jpg" alt="Lunch 6" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Spicy Jollof</h5>
+          <h6 class="price">₦300</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Lunch 7 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://www.linkpicture.com/q/image-12_7.jpg" alt="Lunch 8" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Pounded yam</h5>
+          <h6 class="price">₦150</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lunch 8 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="" alt="Lunch 8" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Oha soup</h5>
+          <h6 class="price">₦500</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </div>
 
 
@@ -188,6 +303,41 @@
     font-weight: 600;
 }
 
+.bars .fas{
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #A84B5C;
+}
+
+.menu-section1{
+  margin-left: 7rem;
+  color: #A84B5C;
+  font-size: 40px;
+}
+
+
+.container {
+  width: 1300px;
+  margin-left: 5rem;
+}
+.section-divider {
+  height: 0;
+  border-top: 1px solid #DDD;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.section-divider > span {
+  color: #A84B5C;
+  background: #FAFAFA;
+  display: inline-block;
+  position: relative;
+  padding: 0 17px;
+  top: -30px;
+  font-size: 40px;
+}
+
+
 #checkout{
     font-size: 2rem;
     font-weight: 300;
@@ -215,6 +365,16 @@
         margin-top: 5rem;
         margin-bottom: -5rem;
     }
+    .menu-section1{
+      margin-left: 0.5rem;
+    }
+
+    .container {
+      width: 270px;
+      margin-left: 4rem;
+    }
+
+
 }
 </style>
 
