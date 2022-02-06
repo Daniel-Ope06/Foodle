@@ -18,9 +18,9 @@ def team_page():
     return render_template("team_page.html")
 
 # Menu page
-@app.route("/menu2")
+@app.route("/menu")
 def menu_page():
-    return render_template("menu_page2.html")
+    return render_template("menu_page.html")
 
 # Checkout page
 @app.route("/checkout")
