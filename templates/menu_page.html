@@ -22,12 +22,14 @@
     <!-- Section content-->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Sections</h5>
+        <h3 class="offcanvas-title" id="offcanvasWithBackdropLabel">Sections</h3>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <h3>Breakfast</h3>
-        <h3>Lunch</h3>
+        <a class="food-section" href="{{ url_for('menu_page') }}#breakfast">Breakfast</a><br><br>
+        <a class="food-section" href="{{ url_for('menu_page') }}#brunch">Brunch</a><br><br>
+        <a class="food-section" href="{{ url_for('menu_page') }}#lunch">Lunch</a><br><br>
+        <a class="food-section" href="{{ url_for('menu_page') }}#fruit">Fruits</a><br><br>
       </div>
     </div>
 
@@ -108,7 +110,7 @@
     <!-- Brunch Header -->
     <div class="row g-3">
         <div class="container">
-          <div class="section-divider" id="menu-section"><span>Brunch</span></div>
+          <div class="section-divider" id="brunch"><span>Brunch</span></div>
         </div>
     </div>
   
@@ -154,11 +156,11 @@
       </div>
     </div>
 
-    <!-- Lunch -->
-    <!-- Lunch Header -->
-    <div class="row g-3">
+  <!-- Lunch -->
+  <!-- Lunch Header -->
+  <div class="row g-3">
       <div class="container">
-        <div class="section-divider" id="menu-section"><span>Lunch</span></div>
+        <div class="section-divider" id="lunch"><span>Lunch</span></div>
       </div>
   </div>
 
@@ -206,9 +208,9 @@
     <!-- Lunch 4 -->
     <div class="col-12 col-md-6 col-lg-3">
       <div class="card">
-        <img src="https://www.linkpicture.com/q/image-14_5.jpg" alt="Lunch 4" class="card-img-top">
+        <img src="https://www.linkpicture.com/q/image-15_5.jpg" alt="Lunch 4" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Oha soup</h5>
+          <h5 class="card-title">Egusi soup</h5>
           <h6 class="price">₦500</h6>
           <p class="card-text">{% include '/text/meal_1.txt' %}</p>
           <a href="#" class="btn btn-color btn-lg">Add to cart</a>
@@ -223,20 +225,20 @@
     <!-- Lunch 5 -->
     <div class="col-12 col-md-6 col-lg-3">
       <div class="card">
-        <img src="https://www.linkpicture.com/q/image-15_5.jpg" alt="Lunch 5" class="card-img-top">
+        <img src="https://images.pexels.com/photos/7233189/pexels-photo-7233189.jpeg?cs=srgb&dl=pexels-artem-podrez-7233189.jpg&fm=jpg" alt="Lunch 5" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Egusi soup</h5>
+          <h5 class="card-title">Oha soup</h5>
           <h6 class="price">₦500</h6>
           <p class="card-text">{% include '/text/meal_1.txt' %}</p>
           <a href="#" class="btn btn-color btn-lg">Add to cart</a>
         </div>
       </div>
     </div>
-
+  
      <!-- Lunch 6 -->
     <div class="col-12 col-md-6 col-lg-3">
       <div class="card">
-        <img src="https://www.linkpicture.com/q/image-11_8.jpg" alt="Lunch 6" class="card-img-top">
+        <img src="https://images.pexels.com/photos/7233189/pexels-photo-7233189.jpeg?cs=srgb&dl=pexels-artem-podrez-7233189.jpg&fm=jpg" alt="Lunch 6" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Spicy Jollof</h5>
           <h6 class="price">₦300</h6>
@@ -249,7 +251,7 @@
      <!-- Lunch 7 -->
     <div class="col-12 col-md-6 col-lg-3">
       <div class="card">
-        <img src="https://www.linkpicture.com/q/image-12_7.jpg" alt="Lunch 8" class="card-img-top">
+        <img src="https://images.pexels.com/photos/7233189/pexels-photo-7233189.jpeg?cs=srgb&dl=pexels-artem-podrez-7233189.jpg&fm=jpg" alt="Lunch 8" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Curry rice and saurce</h5>
           <h6 class="price">₦1,500</h6>
@@ -262,7 +264,7 @@
     <!-- Lunch 8 -->
     <div class="col-12 col-md-6 col-lg-3">
       <div class="card">
-        <img src="" alt="Lunch 8" class="card-img-top">
+        <img src="https://images.pexels.com/photos/7233189/pexels-photo-7233189.jpeg?cs=srgb&dl=pexels-artem-podrez-7233189.jpg&fm=jpg" alt="Lunch 8" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">Plantain and dodo</h5>
           <h6 class="price">₦100</h6>
@@ -273,6 +275,126 @@
     </div>
   </div>
 
+
+
+  <!-- Fruits -->
+  <!-- Fruit Header -->
+  <div class="row g-3">
+    <div class="container">
+      <div class="section-divider" id="fruit"><span>Fruits</span></div>
+    </div>
+  </div>
+
+  <!-- Row 1 -->
+  <div class="row g-3 mt-3 mb-3">
+    <!-- Fruit 1 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/5946081/pexels-photo-5946081.jpeg?cs=srgb&dl=pexels-any-lane-5946081.jpg&fm=jpg" alt="Fruit 1" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Watermelon</h5>
+          <h6 class="price">₦150</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Fruit 2 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3904800/pexels-photo-3904800.jpeg?cs=srgb&dl=pexels-dmitry-demidov-3904800.jpg&fm=jpg" alt="Fruit 2" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Kiwi</h5>
+          <h6 class="price">₦500</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Fruit 3 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/5945854/pexels-photo-5945854.jpeg?cs=srgb&dl=pexels-any-lane-5945854.jpg&fm=jpg" alt="Fruit 3" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Grapes</h5>
+          <h6 class="price">₦1,000</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fruit 4 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/2316466/pexels-photo-2316466.jpeg?cs=srgb&dl=pexels-couleur-2316466.jpg&fm=jpg" alt="Fruit 4" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Banana</h5>
+          <h6 class="price">₦150</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Row 2 -->
+  <div class="row g-3 mt-3 mb-3">
+    <!-- Fruit 5 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/7135024/pexels-photo-7135024.jpeg?cs=srgb&dl=pexels-gradienta-7135024.jpg&fm=jpg" alt="Fruit 5" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Carrot juice</h5>
+          <h6 class="price">₦500</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Fruit 6 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/7135024/pexels-photo-7135024.jpeg?cs=srgb&dl=pexels-gradienta-7135024.jpg&fm=jpg" alt="Fruit 6" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Fruit punch</h5>
+          <h6 class="price">₦500</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+     <!-- Fruit 7 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/7135024/pexels-photo-7135024.jpeg?cs=srgb&dl=pexels-gradienta-7135024.jpg&fm=jpg" alt="Fruit 7" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Veggie smoothie</h5>
+          <h6 class="price">₦700</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fruit 8 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/7135024/pexels-photo-7135024.jpeg?cs=srgb&dl=pexels-gradienta-7135024.jpg&fm=jpg" alt="Fruit 8" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Avocado</h5>
+          <h6 class="price">₦550</h6>
+          <p class="card-text">{% include '/text/meal_1.txt' %}</p>
+          <a href="#" class="btn btn-color btn-lg">Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
@@ -315,6 +437,29 @@
   font-size: 40px;
 }
 
+.offcanvas-title{
+  font-weight: normal;
+  font-size: 50px;
+  color: #A84B5D;
+}
+
+.food-section{
+  font-weight: normal;
+  font-size: 30px;
+  color: #2E2F2F !important;
+  text-decoration: none;
+}
+.food-section:hover{
+  font-weight: bolder;
+  border-bottom: 3px solid #2E2F2F;
+}
+.offcanvas-body{
+  background: #A84B5D;
+  background: -webkit-linear-gradient(top left, #A84B5D, #F6EFA6);
+  background: -moz-linear-gradient(top left, #A84B5D, #F6EFA6);
+  background: linear-gradient(to bottom right, #A84B5D, #F6EFA6);
+}
+
 
 .container {
   width: 1300px;
@@ -350,9 +495,7 @@
     border: none;
     display: inline-block;
 }
-.last-rm{
-    margin-bottom: 3rem;
-}
+
 
 @media (max-width: 768px){
     #checkout{
@@ -361,10 +504,7 @@
         position: relative;
         left: 7.5rem;
     }
-    .last-rm{
-        margin-top: 5rem;
-        margin-bottom: -5rem;
-    }
+    
     .menu-section1{
       margin-left: 0rem;
     }
@@ -372,6 +512,12 @@
     .container {
       width: 270px;
       margin-left: 4rem;
+    }
+    .offcanvas{
+      width: 50%;
+    }
+    .offcanvas-title{
+    font-size: 25px;
     }
 
 
