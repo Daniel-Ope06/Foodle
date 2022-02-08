@@ -8,3 +8,5 @@ The first thought that came to mind was to make the stores open before 8 AM. The
 We finally settled on making the shop a mobile one, a food truck. The food trucks (3 trucks) start moving around the campus from 6 AM and stop at each hostel/location for some minutes. During this time, students can come in front of their hostel to get breakfast, while those in other hostels can place orders on the website and pick it up when a truck reaches their location.
 
 We also surveyed to know if there's demand for this service.
+
+We decided not to limit ourselves to only 6-8 AM breakfast time but to run throughout the day (6 AM -10 PM) with work shifts.
