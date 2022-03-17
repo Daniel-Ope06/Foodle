@@ -1,4 +1,6 @@
 # Foodle
+![foodle_preview](https://user-images.githubusercontent.com/97707320/158897426-04a9b819-8518-4100-85e6-25e973aa84c0.gif)
+
 ## Problem
 Classes start as early as 8 AM in Elizade Univerisity. Many students don't eat before class due to how early it is. So my friends and I decided to make missing breakfast a thing of the past.
 
